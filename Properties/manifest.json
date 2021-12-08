@@ -1,0 +1,58 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.9/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.9",
+  "version": "1.0.0",
+  "id": "fb44cf4e-89c9-48fc-956a-9db9a06f6cb5",
+  "packageName": "com.company.example",
+  "developer": {
+    "name": "MyTeamsApp11",
+    "websiteUrl": "https://localhost:44357",
+    "privacyUrl": "https://localhost:44357/privacy",
+    "termsOfUseUrl": "https://localhost:44357/termsofuse"
+  },
+  "icons": {
+    "color": "../color.png",
+    "outline": "../outline.png"
+  },
+  "name": {
+    "short": "MyTeamsApp11",
+    "full": "MyTeamsApp11"
+  },
+  "description": {
+    "short": "Short description for MyTeamsApp11.",
+    "full": "Full description of MyTeamsApp11."
+  },
+  "webApplicationInfo": {
+    "id": "f6448b58-bb0f-49a4-ab65-876889984301",
+    "resource": "api://localhost/f6448b58-bb0f-49a4-ab65-876889984301"
+  },
+  "accentColor": "#FFFFFF",
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": [
+    "localhost"
+  ],
+  "configurableTabs": [
+    {
+      "configurationUrl": "https://localhost:44357/config",
+      "canUpdateConfiguration": true,
+      "scopes": [
+        "team",
+        "groupchat"
+      ]
+    }
+  ],
+  "staticTabs": [
+    {
+      "entityId": "index",
+      "name": "Personal Tab",
+      "contentUrl": "https://localhost:44357/tab",
+      "websiteUrl": "https://localhost:44357/tab",
+      "scopes": [
+        "personal"
+      ]
+    }
+  ]
+}
